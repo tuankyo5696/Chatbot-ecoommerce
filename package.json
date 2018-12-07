@@ -1,0 +1,34 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "React bot for webpage",
+  "main": "index.js",
+  "engines": {
+    "node": "8.12.0",
+    "npm": "6.4.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "backend": "nodemon index.js",
+    "frontend": "npm run start --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "author": "Tran Anh Tuan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dialogflow": "^0.7.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "export": "^0.1.337",
+    "express": "^4.16.4",
+    "http-proxy-middleware": "^0.19.1",
+    "install": "^0.12.2",
+    "mongoose": "^5.3.15",
+    "nodemon": "^1.18.7",
+    "universal-cookie": "^3.0.7",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
